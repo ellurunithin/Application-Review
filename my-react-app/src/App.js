@@ -1,5 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Student from './components/Student';
+import StudentDetails from './components/StudentDetails';
+import './App.css'; // Import CSS file for styling
 
 // Sample data for demonstration
 const sampleStudentData = [
@@ -116,11 +120,8 @@ const ReviewCard = ({ student }) => {
   );
 };
 
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Student from './components/Student';
-import StudentDetails from './components/StudentDetails';
-import './App.css'; // Import CSS file for styling
+
+
 
 // Sample student data
 const studentsData = [
